@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Washi</title>
+
+    <link rel="stylesheet" href="CSS/style.css" >
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <a href="#"></a>
+                <img src="image/Logo.png" alt="Washi logo">
+        </div>
+
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Review</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+       </ul> 
+
+       <div class="nav-right-item">
+            <button class="join-us-btn">Join Us</button> 
+            <div class="hamburger-menu">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>        
+    </nav>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger-menu");
+        const navMenu = document.querySelector(".menu");
+        const joinUsBtn = document.querySelector(".join-us-btn");
+
+        hamburger.addEventListener("click",() =>{
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+            joinUsBtn.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".menu li a").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+            joinUsBtn.classList.remove("active");
+        }));
+    </script>
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>No time? No tools? No problem.</h1>
+            <h3>We bring the clean to you — fast,easy and eco-friendly.</h3>
+            <button class="call-to-action">Get queue</button>
+            <div class="stats">
+                <div class="stat-item">
+                    <h2>200</h2>
+                    <p>project complete</p>
+                </div>
+                <div class="stat-item">
+                    <h2>10+</h2>
+                    <p>Year Experience</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="image/image-hero.png" alt="Car wash team">
+        </div>
+    </section>
+    <section class="customer-reviews">
+        <h2>What Our Customers Say</h2>
+        <p>“We take pride in delivering excellent service — <br>
+            here’s what our happy customers have to say about their experience.”</p>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <img src="image/Ari.png" alt="Ari world profile picture" class="reviewer-avatar">
+                    <div class="reviewer-details">
+                        <h3>Ari world</h3>
+                        <p class="review-date">22 Nov 2024</p>
+                        <img src="image/happy.png" alt="Happy face icon" class="review-NPS-score"> </div>
+                    </div>                   
+                <p class="review-text">Lorem ipsum dolor sit amet consectetur. Dictum vitae ornare sed mi proin consequat pellentesque tempor. Quis donec mauris euismod vulputate semper risus lobortis. Dui luctus vulputate ut aliquam cursus. Egestas id in elementum suspendisse ut nunc luctus amet sit.</p>
+            </div>
+    
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <img src="image/Arden.png" alt="Arden Air profile picture" class="reviewer-avatar">
+                    <div class="reviewer-details">
+                        <h3>Arden Air</h3>
+                        <p class="review-date">24 Jan 2025</p>
+                        <img src="image/Ne.png" alt="Neutral face icon" class="review-NPS-score">
+                    </div>                   
+                </div>
+                <p class="review-text">Lorem ipsum dolor sit amet consectetur. Quis donec mauris euismod vulputate semper risus lobortis. Dui luctus vulputate ut aliquam cursus. Egestas id in elementum suspendisse ut nunc luctus amet sit.</p>
+            </div>
+
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <img src="image/Noahl.png" alt="Noah James profile picture" class="reviewer-avatar">
+                    <div class="reviewer-details">
+                        <h3>Noah James</h3>
+                        <p class="review-date">30 Feb 2025</p>
+                        <img src="image/sad.png" alt="Sad face icon" class="review-NPS-score">
+                    </div>                    
+                </div>
+                <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, quam aperiam quos nostrum ipsam in omnis velit laborum, dicta quisquam aliquam eum, incidunt corrupti! Et aliquid amet minus quae asperiores!</p>
+            </div>
+        </div>
+    </section>
+    <section class="why-choose-us">
+        <h1>Why Choose Us</h1>
+        <div class="reasons-grid">
+            <div class="reasons-card">
+                <img src="image/c1.png" alt="Convenient Service image" class="reasons-image">
+                <h3>Convenient Service image</h3>
+                <p>Done anywhere, anytime — we come to you.</p>
+                <button class="learn-more-btn">Learn more</button>
+            </div>
+
+            <div class="reasons-card">
+                <img src="image/c2.png" alt="Eco-friendly Product" class="reasons-image">
+                <h3>Eco-friendly Product</h3>
+                <p>Safe for your car, your family, and the environment.</p>
+                <button class="learn-more-btn">Learn more</button>
+            </div>
+
+            <div class="reasons-card">
+                <img src="image/c3.png" aria-label="Trusted by Real Customers" class="reasons-image">
+                <h3>Trusted by Real Customers</h3>
+                <p>Backed by honest reviews and returning clients.</p>
+                <button class="learn-more-btn">Learn more</button>
+            </div>
+        </div>
+    </section>
+    <section class="our-story">
+        <div class="story-content">
+            <h1>Our Story</h1>
+            <p>We treat every car as if it were our own, obsessing over the smallest details to deliver a showroom‑worthy finish. Our team works exclusively with modern, premium‑grade equipment and eco‑friendly products, ensuring each wash is both meticulous and safe for your vehicle and the environment. Because for us, true quality is measured one spotless panel at a time.</p>
+        </div>
+        <div class="story-visuals">
+            <img src="image/story.png" alt="Car wash tool and equipment">
+            <div class="story-stats">
+                <div class="story-stat-item">
+                    <h2>200</h2>
+                    <p>Project complete</p>
+                </div>
+                <div class="story-stat-item">
+                    <h2>10+</h2>
+                    <p>experience</p>
+                </div>
+                <div class="story-stat-item">
+                    <h2>10K</h2>
+                    <p>User</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="footer-cta">
+                <img src="image/Logo.png" alt="Washi logo" class="footer-logo">
+                <h2>book a queue Today</h2>
+                <p>Your car deserves a spa day — book your wash now!</p>
+                <button class="call-to-action footer-btn">Get queue</button>
+            </div>
+           
+            <div class="footer-bottom">
+                <div class="footer-contact-info">
+                    <h2>Contact</h2>
+                    <p><img src="image/Phone.png" alt="Phone icon" >099-12123-12121</p>
+                    <p><img src="image/Email.png" alt="Email icon">support@washibkk.com</p>
+                    <p><img src="image/location.png" alt="Location icon">Bangkok, Thailand</p>
+                </div>
+
+                <div class="footer-navigation">
+                    <h2>Navigation</h2>
+                    <ul>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Review</a></li>
+                        <li><a href="#">Why choose us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>                   
+                </div>
+
+                <div class="footer-social-media">
+                    <h2>Social Media</h2>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Line</a></li>
+                        <li><a href="#">Tiktok</a></li>
+                        <li><a href="#">Linkin</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <p>&copy; 2025 washi-carcare & service. All rights reserved.</p>
+                <div class="footer-link">
+                    <a href="#">Privacy Policy</a> <a href="#">Term of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html> 
